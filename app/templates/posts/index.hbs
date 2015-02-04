@@ -1,0 +1,10 @@
+{{outlet}}
+
+{{#link-to 'posts.new' }}New Post{{/link-to}}
+
+
+{{#each post in model}}
+<p>{{#link-to 'post' post}} {{post.title}} {{/link-to}}</p>
+{{post.body}}
+<button {{action 'deletePosts' }}> Delete Post</button>
+{{/each}}

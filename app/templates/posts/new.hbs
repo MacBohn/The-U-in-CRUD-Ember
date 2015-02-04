@@ -1,0 +1,10 @@
+{{outlet}}
+<div class="title">
+  {{textarea placeholder="Add a Title!" value=title cols="40" }}
+</div>
+
+<div class="note">
+  {{textarea placeholder="Add a note!" value=body rows="9" cols="40" }}
+</div>
+
+<button {{action 'createPosts' }}> Save New </button>
